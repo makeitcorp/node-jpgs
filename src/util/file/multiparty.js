@@ -38,7 +38,8 @@ exports.parse = (req, progress, path, name) => {
       resolve({
         originalName: filename,
         fileSize: size,
-        type: filename.split('.').pop()
+        type: filename.split('.').pop(),
+        ipAddress: req.connection.remoteAddress
       })
     })
 

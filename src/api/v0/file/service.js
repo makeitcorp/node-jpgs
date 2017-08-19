@@ -33,6 +33,7 @@ const modelBind = obj => {
     original_name: obj.originalName,
     real_path: obj.name,
     size: obj.fileSize,
-    type: obj.type
+    type: obj.type,
+    ip_address: obj.ipAddress
   }
 }
